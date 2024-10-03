@@ -1,0 +1,114 @@
+/* Modal backdrop with subtle fade-in */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure it's on top */
+    animation: fadeIn 0.3s ease-in-out;
+    /* Smooth fade-in for backdrop */
+}
+
+/* Modal container with 3D effect and smooth appearance */
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* 3D shadow effect */
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: slideIn 0.4s ease forwards;
+    /* Smooth sliding effect for modal */
+}
+
+/* Modal animation for smooth entry */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+        /* Start higher */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End in place */
+    }
+}
+
+/* Modal backdrop fade-in effect */
+@keyframes fadeIn {
+    from {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Modal action buttons with 3D hover effects */
+.modal-actions {
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 3D shadow effect */
+}
+
+/* Button hover with lift and shadow */
+.modal-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    /* Lift effect */
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+/* Button active state with press-down effect */
+.modal-actions button:active {
+    background-color: #003f7f;
+    transform: translateY(2px);
+    /* Press down effect */
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle pressed shadow */
+    animation: bounce 0.2s;
+    /* Bounce effect */
+}
+
+/* Bounce animation for button click */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2px);
+        /* Bounce up slightly */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Return to normal position */
+    }
+}

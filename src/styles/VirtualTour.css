@@ -1,0 +1,72 @@
+.virtual-tour {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.intro,
+.what-is-handloom,
+.types-of-handloom,
+.about-artists,
+.handloom-daily-life {
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.types-of-handloom .handloom-types {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.handloom-item {
+    width: 30%;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.handloom-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.artist-profile {
+    background-color: #f7f7f7;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.explore-more {
+    text-align: center;
+}
+
+.explore-more button {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.explore-more button:hover {
+    background-color: #d35400;
+}

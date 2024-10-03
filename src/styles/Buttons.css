@@ -1,0 +1,67 @@
+/* Global button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Creates the 3D shadow */
+    position: relative;
+    display: inline-block;
+    transform: translateY(0);
+    /* Normal position */
+}
+
+button:hover {
+    transform: translateY(-4px);
+    /* Move the button up to create a hovering effect */
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 12px 20px rgba(0, 0, 0, 0.25);
+    /* Enhance shadow on hover */
+}
+
+button:active {
+    transform: translateY(2px);
+    /* Slight push-down effect */
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Adjust shadow on click */
+}
+
+/* Primary button styles */
+.primary-button {
+    background-color: #007bff;
+    color: white;
+    border-bottom: 3px solid #0056b3;
+    /* Adds a solid bottom to enhance 3D effect */
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
+.primary-button:active {
+    background-color: #003f7f;
+    /* Darker shade when clicked */
+    border-bottom: 1px solid #003f7f;
+    /* Adjust the border for pressed effect */
+}
+
+/* Success button styles */
+.success-button {
+    background-color: #28a745;
+    color: white;
+    border-bottom: 3px solid #218838;
+    /* Adds a solid bottom to enhance 3D effect */
+}
+
+.success-button:hover {
+    background-color: #218838;
+}
+
+.success-button:active {
+    background-color: #196f31;
+    /* Darker shade when clicked */
+    border-bottom: 1px solid #196f31;
+    /* Adjust the border for pressed effect */
+}

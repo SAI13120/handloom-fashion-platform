@@ -1,0 +1,65 @@
+/* General Container Styling */
+.homepage-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.homepage-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* 3D Button Styles */
+.button-container {
+    margin: 20px 0;
+}
+
+.btn-3d {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: inline-block;
+
+    /* 3D effect: pseudo-element */
+}
+
+.btn-3d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translate(5px, 5px);
+    opacity: 0.6;
+}
+
+.btn-3d:hover::before {
+    transform: translate(0, 0);
+    opacity: 0;
+}
+
+.btn-3d:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Animation */
+.btn-3d:hover {
+    background-color: #2980b9;
+}
+
+.btn-3d:active {
+    transform: translateY(0);
+    box-shadow: none;
+}

@@ -1,0 +1,73 @@
+.checkout-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.checkout-page h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.checkout-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.checkout-page ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Button with 3D effect and animations */
+.checkout-page button {
+    padding: 12px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px rgba(0, 0, 0, 0.15);
+    /* 3D shadow */
+}
+
+.checkout-page button:hover {
+    background-color: #218838;
+    transform: translateY(-5px);
+    /* Lift the button up slightly on hover */
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2), 0 16px 24px rgba(0, 0, 0, 0.25);
+    /* Stronger shadow */
+}
+
+.checkout-page button:active {
+    background-color: #196f31;
+    transform: translateY(3px);
+    /* Push down on click */
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.15);
+    /* Subtle pressed shadow */
+}
+
+/* Adding a bounce effect when button is clicked */
+.checkout-page button:active {
+    animation: bounce 0.2s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+        /* Small lift during bounce */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Return to original position */
+    }
+}

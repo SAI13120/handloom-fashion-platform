@@ -1,0 +1,110 @@
+/* Profile Container */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* 3D shadow */
+    transition: transform 0.3s ease;
+}
+
+.profile-container:hover {
+    transform: translateY(-10px);
+    /* Lifts the container slightly */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    /* Deepens the shadow */
+}
+
+/* Profile Details and Form Labels */
+.profile-container h1,
+.profile-container h2,
+.profile-container label {
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.profile-container p {
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Input Fields */
+.profile-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container input:focus {
+    border-color: #007bff;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Buttons with 3D Effect */
+.profile-container button {
+    padding: 12px 30px;
+    margin: 10px 10px 0 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 3D shadow effect */
+}
+
+.profile-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    /* Lift effect */
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow */
+}
+
+.profile-container button:active {
+    background-color: #003f7f;
+    transform: translateY(2px);
+    /* Press down effect */
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle pressed shadow */
+}
+
+/* Orders List */
+.profile-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-container ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-container ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Logout Button Styling */
+.profile-container .logout-button {
+    background-color: #dc3545;
+}
+
+.profile-container .logout-button:hover {
+    background-color: #c82333;
+}
+
+.profile-container .logout-button:active {
+    background-color: #a71d2a;
+}
